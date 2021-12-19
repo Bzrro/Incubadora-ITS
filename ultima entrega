@@ -21,17 +21,15 @@ char colPins[cols] = {D5, D4, D3};
 #include "DHTesp.h"
 DHTesp dht;
 // Configuración Wi-Fi
-//const char* ssid = "Allen39"; // nombre de la red
-//const char* ssid = "Kent38"; // nombre de la red
-const char* ssid = "iPhone"; // nombre de la red
-//const char* password = "Maytheforcebewithyou"; // contraseña de la red
-const char* password = "TheForce"; // contraseña de la red
+
+const char* ssid = "********"; // nombre de la red
+const char* password = "*********"; // contraseña de la red
 WiFiClient client;
 
 // ThingSpeak 
 
-const int channelID = 1519881;
-String writeAPIKey = "W42EN9NMIIFYE0OR"; //llave API para el canal ThingSpeak
+const int channelID = *******;//channel id del canal ThingSpeak
+String writeAPIKey = "**************"; //llave API para el canal ThingSpeak
 const char* server = "api.thingspeak.com";
 const int postingInterval = 10 * 1000; // intervalo a usar para tiempo entre posteo
 
